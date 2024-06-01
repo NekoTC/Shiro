@@ -11,6 +11,7 @@ import { ErrorBoundary } from '~/components/common/ErrorBoundary'
 import {
   FaSolidComments,
   FaSolidFeatherAlt,
+  FaSolidTrainSubway,
   FaSolidHistory,
   FaSolidUserFriends,
   IcTwotoneSignpost,
@@ -18,6 +19,7 @@ import {
   MdiLightbulbOn20,
   RMixPlanet,
 } from '~/components/icons/menu-collection'
+import { Hitokoto } from '~/components/modules/dashboard/home'
 import { isSupportIcon, SocialIcon } from '~/components/modules/home/SocialIcon'
 import { usePresentSubscribeModal } from '~/components/modules/subscribe'
 import { StyledButton } from '~/components/ui/button'
@@ -139,7 +141,9 @@ const Hero = () => {
             transition={softBouncePreset}
             className="my-3 text-center lg:text-left"
           >
-            <span className="opacity-80">{description}</span>
+            <span className="opacity-80">
+              <Hitokoto />
+            </span>
           </BottomToUpTransitionView>
 
           <ul className="mx-[60px] mt-8 flex flex-wrap gap-4 center lg:mx-auto lg:mt-28 lg:justify-start">
@@ -257,6 +261,11 @@ const windsock = [
     title: '跃迁',
     icon: RMixPlanet,
     path: 'https://travel.moe/go.html',
+  },
+  {
+    title: '开往',
+    icon: FaSolidTrainSubway,
+    path: 'https://www.travellings.cn/go.html',
   },
 ]
 

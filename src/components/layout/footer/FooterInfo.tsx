@@ -141,7 +141,14 @@ const PoweredBy: Component = ({ className }) => {
           </MLink>
         )}
       </FloatPopover>
-      .
+      . <Divider />
+      <StyledLink href="https://beian.miit.gov.cn" target="_blank">
+        陇ICP备2024006604号
+      </StyledLink>
+      <Divider />
+      <StyledLink href="https://icp.gov.moe/?keyword=20222120" target="_blank">
+        萌ICP备20240660号
+      </StyledLink>
     </span>
   )
 }
@@ -201,7 +208,7 @@ const FooterBottom = async () => {
           </SubscribeTextButton>
         </span>
         <span className="mt-3 block md:mt-0 md:inline">
-          Stay hungry. Stay foolish.
+          『世界が私を忘れて』
         </span>
       </p>
       <div>
