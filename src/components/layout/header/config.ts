@@ -2,7 +2,7 @@ import { createElement as h } from 'react'
 import type { ReactNode } from 'react'
 
 import {
-  FaSolidTrainSubway
+  FaSolidTrainSubway,
   FaSolidCircle,
   FaSolidCircleNotch,
   FaSolidComments,
